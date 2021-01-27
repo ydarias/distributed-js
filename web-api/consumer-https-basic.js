@@ -8,7 +8,7 @@ const TARGET = process.env.TARGET || 'localhost:4000';
 
 const options = {
     agent: new https.Agent({
-        ca: fs.readFileSync(__dirname+'/../shared/tls/basic-certificate.cert')
+        ca: fs.readFileSync(__dirname+'/../shared/tls/ca-certificate.cert')
     })
 };
 
